@@ -3,7 +3,7 @@ import GoogleMapReact from "google-map-react";
 import GetLocationButton from "../GetLocationButton/GetLocationButton";
 
 export const GoogleMapImports = React.forwardRef(({ children }, ref) => {
-  const [defaultCoordinates, setDefaultCoordinates] = useState({
+  const [defaultCoordinates] = useState({
     center: {
       lat: 6.4627,
       lng: 3.3997,
