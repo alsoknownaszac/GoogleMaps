@@ -1,0 +1,54 @@
+.infoWindowStyle {
+  width: max-content;
+  position: absolute;
+  bottom: 0;
+  left: 2.2rem;
+  transform: translate3d(-50%, 0%, 0);
+  background-color: white;
+  border-radius: 0.8rem;
+  padding: 1.3rem;
+  padding-top: 1.5rem;
+  padding-right: 3rem;
+  box-shadow: 0 2px 7px 1px rgb(0 0 0 / 30%);
+  font-weight: 300;
+  font-size: 1.3rem;
+  z-index: 100000 !important;
+}
+
+.infoWindowStyle::after {
+  background: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 255, 255, 0) 51%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  box-shadow: -2px 2px 2px 0 rgb(178 178 178 / 40%);
+  content: "";
+  height: 1.5rem;
+  left: 50%;
+  position: absolute;
+  top: 100%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  width: 1.5rem;
+}
+
+.infoWindowStyle .closeBtn {
+  cursor: pointer;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.7rem;
+}
+
+.infoWindowStyle .closeBtn .closeIcon,
+.infoWindowStyle .infoWindowDetails {
+  font-size: 1.6rem;
+}
+
+.infoWindowStyle .infoWindowDetails {
+  font-weight: 500;
+}
+
+.infoWindowStyle .infoWindowAddress {
+  font-size: 1.4rem;
+  font-weight: 400;
+}

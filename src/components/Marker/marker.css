@@ -1,0 +1,10 @@
+.markerStyle {
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1000;
+  font-size: 4.3rem;
+}
+
+.markerCard {
+  cursor: pointer;
+}
